@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #243047;
+    line-height: 1.6;
+}
+.site-header {
+    background: #263d80;
+    color: white;
+    text-align: center;
+    padding: 30px 16px;
+}
+.site-header h1 {
+    margin: 0;
+    font-size: 2.2rem;
+}
+.site-header p {
+    margin: 6px 0 0;
+    color: #e0e7ff;
+}
+.container {
+    width: min(1100px, 92%);
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 24px;
+    align-items: start;
+}
+.panel {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(20, 35, 70, 0.08);
+}
+.panel h2 {
+    margin-top: 0;
+    color: #263d80;
+}
+label {
+    display: block;
+    font-weight: bold;
+    margin: 14px 0 6px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd4e0;
+    border-radius: 7px;
+    font: inherit;
+    color: #243047;
+    background: white;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #829cf5;
+    border-color: #263d80;
+}
+textarea {
+    resize: vertical;
+}
+button {
+    border: none;
+    border-radius: 7px;
+    padding: 11px 16px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+#event-form button {
+    width: 100%;
+    margin-top: 18px;
+    background: #263d80;
+    color: white;
+}
+#event-form button:hover {
+    background: #192b60;
+}
+.events-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+#event-count {
+    color: #5b6680;
+    font-size: 0.9rem;
+}
+.events-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 20px;
+}
+.event-card {
+    border: 1px solid #e0e6f0;
+    border-left: 5px solid #526ee0;
+    border-radius: 9px;
+    padding: 17px;
+    overflow-wrap: anywhere;
+}
+.event-card h3 {
+    color: #263d80;
+    margin: 0 0 8px;
+}
+.event-date,
+.event-venue {
+    color: #52617b;
+    font-size: 0.92rem;
+    margin: 5px 0;
+}
+.event-description {
+    white-space: pre-wrap;
+    margin: 12px 0;
+}
+.delete-button {
+    background: #b42332;
+    color: white;
+    margin-top: 6px;
+}
+.delete-button:hover {
+    background: #861b27;
+}
+.empty-message {
+    color: #65718a;
+    text-align: center;
+    padding: 22px 8px;
+}
+#form-message {
+    margin-bottom: 0;
+    color: #176b3a;
+}
+footer {
+    text-align: center;
+    color: #65718a;
+    padding: 20px;
+}
+@media (max-width: 750px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .site-header h1 {
+        font-size: 1.8rem;
+    }
+    .panel {
+        padding: 18px;
+    }
+}
